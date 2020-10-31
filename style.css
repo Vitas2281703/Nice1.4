@@ -960,6 +960,9 @@ footer {
 /* адаптив */
 
 @media screen and (max-device-width: 900px) {
+  *{
+    font-family: Montserrat;
+  }
   .nav {
     display: none;
   }
