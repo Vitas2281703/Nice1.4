@@ -885,8 +885,7 @@ footer {
   width: 86px;
   height: 45px;
   display: none;
-  margin-left: 28px;
-  margin-top: 15px;
+  
 }
 .telephone p {
   display: none;
@@ -966,17 +965,23 @@ footer {
   }
   .header {
     position: relative;
-    height: 80px;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-top{
+    width: 320px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 0 auto;
   }
   .logo {
     display: none;
   }
   .mobile-logo {
     display: flex;
-    margin-top: -9px;
-  }
-  .telephone {
-    margin-right: 27px;
   }
   .telephone p {
     display: flex;
@@ -992,11 +997,14 @@ footer {
 
     color: #35302f;
   }
+  .telephone{
+    margin-top: 6px;
+  }
   .telephone a {
     font-weight: 600;
     font-size: 17px;
     line-height: 21px;
-
+    margin-top: 5px;
     /* identical to box height */
     text-align: right;
     letter-spacing: 0.05em;
@@ -1008,11 +1016,16 @@ footer {
   }
   .slider-container {
     flex-direction: column-reverse;
+    margin-top: 0px;
+    margin-bottom: 15vh;
+  }
+  .mobile-slider-pag{
+    margin-bottom: 8vh;
   }
   .card {
     flex-direction: column-reverse;
     width: 100%;
-    height: 575px;
+    height: 82vh !important;
   }
   .slide-img {
     margin-left: 0 !important;
@@ -1028,7 +1041,7 @@ footer {
     font-weight: 300;
     font-size: 23px;
     line-height: 140%;
-    width: auto;
+    width: auto !important;
     /* or 32px */
     text-align: center;
     letter-spacing: 0.02em;
@@ -1159,47 +1172,37 @@ footer {
   }
   .card2 {
     width: 375px;
-    height: 375px;
+    height: 375px !important;
     flex-direction: column;
     margin: 0 !important;
-  }
-  .slide-text2 {
-    margin: 0 !important;
-  }
-  .slide-text2 h1 {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 23px;
-    line-height: 140%;
-    margin: 0 !important;
-    /* or 32px */
-    letter-spacing: 0.02em;
-    width: 150px;
-    color: #35302f;
-    margin-bottom: 0px;
-  }
-  .slide-text2 p {
-    display: none;
-  }
-  .slide-text2 a {
-    display: none;
-  }
-  .slide-img2 img {
-    width: 339px;
-    height: 140px;
-  }
-  .slide-img2 {
-    margin: 0px !important;
-  }
+  } 
   .mobile-slide {
     flex-direction: column;
     width: 375px;
     height: 375px;
+    margin-bottom: 0px;
   }
-  .mobile-swiper-cont {
+  .mobile-slide a{
     width: 375px;
     height: 375px;
-    margin-top: 60px !important;
+  }
+  .card2 img{
+    width: 375px;
+    height: 375px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .mobile-swiper-cont{
+    height: 375px;
+    width: 375px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .mobile-slider2-pag{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
   }
   .first {
     display: none;
@@ -1264,6 +1267,9 @@ footer {
     width: 150px;
     height: 150px;
   }
+  .footer{
+    margin-bottom: 6vh;
+  }
   .footer-top {
     display: flex;
     flex-direction: column;
@@ -1304,7 +1310,41 @@ footer {
   .footer-bottom a {
     margin-bottom: 10px;
   }
+  #map{
+    height: 375px !important;
+  }
+  .mobile-knopka-svyazi-block{
+    position: fixed;
+    z-index: 1100;
+    bottom: 0;
+  }
+  .mobile-knopka-svyazi{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 10px;
+line-height: 2vh;
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+background-color: #5888EA;
+width: 100vw;
+text-decoration: none;
+display: inline-block !important;
+text-align: center;
+
+vertical-align: middle;
+
+
+
+padding-top: 2vh;
+padding-bottom: 2vh;
+z-index: 1000;
+  }
 }
+
 /* адаптив */
 
 #map {
@@ -1312,7 +1352,9 @@ footer {
   height: 600px;
 }
 
-
+.mobile-knopka-svyazi{
+  display: none;
+}
 .form-obr-sv-h1 {
   font-style: normal;
   font-weight: normal;
