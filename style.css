@@ -961,7 +961,7 @@ footer {
 
 @media screen and (max-device-width: 900px) {
   *{
-    font-family: Montserrat;
+    font-family: Montserrat !important;
   }
   .nav {
     display: none;
